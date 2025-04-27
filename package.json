@@ -1,0 +1,35 @@
+{
+	"name": "@rivantmedia/trpc-rbac",
+	"version": "1.0.0",
+	"description": "Flexible, zero-dependency bitfield-based Role-Based Access Control (RBAC) middleware for tRPC—define and enforce granular permissions with ease.",
+	"main": "dist/index.cjs.js",
+	"module": "dist/index.esm.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"prettier": "@rivantmedia/prettier-config",
+	"scripts": {
+		"test": "jest",
+		"build": "tsup src/index.ts --dts --format cjs,esm"
+	},
+	"author": "Rajat Gupta",
+	"keywords": [
+		"tRPC",
+		"RBAC",
+		"middleware",
+		"permissions",
+		"bitfield"
+	],
+	"license": "MIT",
+	"peerDependencies": {
+		"zod": "^3.0.0",
+		"@trpc/client": "^11.0.0",
+		"@trpc/server": "^11.0.0"
+	},
+	"devDependencies": {
+		"@rivantmedia/prettier-config": "^3.0.0",
+		"tsup": "^8.4.0",
+		"typescript": "^5.8.3"
+	}
+}
